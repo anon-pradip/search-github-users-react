@@ -24,15 +24,14 @@ ReactFC.fcRoot(FusionCharts, Chart, FusionTheme);
 const w = () => {
   const widthOfDoc = window.innerWidth;
   let wod
-  if (widthOfDoc <= 450) {
+  if (widthOfDoc <= 670) {
     wod = 400
-  } else if (widthOfDoc > 451 && widthOfDoc <= 780) {
-    wod = 650
   } else {
     wod = 900
   }
   return wod
 }
+
 
 const Bar3D = ({ data }) => {
   const chartConfigs = {
