@@ -4,7 +4,7 @@ import Follwer from "./Follower"
 
 const User = () => {
   return (
-    <div className='flex flex-col mb-6 gap-6 justify-center items-center md:flex-row'>
+    <div className='flex mb-6 gap-8 justify-center items-center'>
       <Card />
       <Follwer />
     </div>

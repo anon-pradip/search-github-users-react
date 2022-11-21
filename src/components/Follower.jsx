@@ -4,7 +4,7 @@ import { useGlobalContext } from '../context/context'
 const Follower = () => {
   const { followers } = useGlobalContext();
   return (
-    <div className='flex flex-col bg-white min-h-[300px] max-h-[300px] rounded-md w-[400px]'>
+    <div className='flex flex-col w-[400px] bg-white max-h-[300px] rounded-md'>
       <div className='bg-blue-500 text-white py-2 text-xl text-center rounded-t-md  tracking-widest'>Followers</div>
       {/* List the followers */}
       <div className='overflow-hidden hover:overflow-y-auto '>
