@@ -35,7 +35,7 @@ const Card = () => {
         {/* Company */}
         <div className='flex gap-2 mt-3 mb-3 items-center'>
           <BsBuilding />
-          {comapany ? <p className='text-slate-600 font-medium'>{company}</p> : <p className='text-slate-600 font-medium'>Not available</p>}
+          {company ? <p className='text-slate-600 font-medium'>{company}</p> : <p className='text-slate-600 font-medium'>Not available</p>}
         </div>
         {/* Address */}
         <div className='flex gap-2 mb-3 items-center'>
