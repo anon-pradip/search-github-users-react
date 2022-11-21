@@ -5,7 +5,7 @@ const Navbar = () => {
   const { isAuthenticated, loginWithRedirect, logout, user, isLoading } = useAuth0();
   const isUser = isAuthenticated && user
   return (
-    <div className='bg-white shadow-xl w-full font-semibold flex justify-center items-center py-4'>
+    <div className='bg-white shadow-xl w-full font-semibold flex flex-col md:flex-row justify-center items-center py-4'>
       {isUser && user.picture && (<div className='flex justify-center items-center gap-x-4'>
         <img src={user.picture} alt={user.name} className="w-12 h-12 rounded-full" />
         <p className='mr-1'>Welcome, </p>
