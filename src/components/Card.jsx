@@ -21,7 +21,7 @@ const Card = () => {
             </div>
             <div className='flex flex-col'>
               <h1 className='font-bold font-mono'>{name}</h1>
-              <p className='text-slate-500'>{twitter_username}</p>
+              <p className='text-slate-500'>@{twitter_username}</p>
             </div>
           </div>
           {/* follow */}
@@ -29,7 +29,7 @@ const Card = () => {
         </div>
         {/* BIO */}
         <div className='text-justify text-slate-500 mt-2'>
-          <p>{bio}</p>
+          {bio ? <p>{bio}</p> : <p>Not available</p>}
         </div>
         {/* Location type infos */}
         {/* Company */}
