@@ -6,13 +6,19 @@ const Navbar = () => {
   const isUser = isAuthenticated && user
   return (
     <div className='bg-white shadow-xl w-full font-semibold flex flex-col md:flex-row justify-center items-center py-4'>
-      {isUser && user.picture && (<div className='flex justify-center items-center gap-x-4'>
-        <img src={user.picture} alt={user.name} className="w-12 h-12 rounded-full" />
-        <p className='mr-1'>Welcome, </p>
-      </div>)}
-      {isUser && user.name && (
-        <div className='font-bold mr-7'>{user.name.toUpperCase()}</div>
-      )}
+      <div className='flex flex-row justify-center items-center'>
+        <div>
+          {isUser && user.picture && (<div className='flex justify-center items-center gap-x-4'>
+            <img src={user.picture} alt={user.name} className="w-12 h-12 rounded-full" />
+            <p className='mr-1'>Welcome, </p>
+          </div>)}
+        </div>
+        <div>
+          {isUser && user.name && (
+            <div className='font-bold mr-7'>{user.name.toUpperCase()}</div>
+          )}
+        </div>
+      </div>
       <div>
         {isUser ?
           <button className='text-slate-600 text-lg tracking-wider' onClick={() => logout({ returnTo: window.location.origin })}>

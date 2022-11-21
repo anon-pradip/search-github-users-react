@@ -9,7 +9,7 @@ const Card = () => {
   const { login, avatar_url, name, html_url, twitter_username, company, blog, bio, location } = githubUser;
 
   return (
-    <div className='bg-white max-w-sm  flex flex-col max-h-[300px] rounded-md'>
+    <div className='bg-white w-[390px]  flex flex-col max-h-[300px] rounded-md'>
       <div className='bg-blue-500 text-white py-2 text-xl text-center rounded-t-md  tracking-widest'>User</div>
       <div className='flex flex-col px-4 '>
         {/* image conatiner */}

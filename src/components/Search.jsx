@@ -17,7 +17,7 @@ const Search = () => {
         {error.show ? error.msg : null}
       </div>
       <div className='flex flex-col mb-5 md:flex-row md:gap-x-6 items-center justify-center'>
-        <form className='flex bg-white p-2 rounded-md flex-col' onSubmit={handleSubmit}>
+        <form className='flex max-w-sm bg-white p-2 rounded-md flex-col' onSubmit={handleSubmit}>
           <div className='flex justify-center items-center gap-x-2'>
             <BsSearch className='fill-slate-500' />
             <input type="text" placeholder='Enter Github User' className='focus:outline-none  w-96 border-none rounded-md p-1' value={user} onChange={(e) => setUser(e.target.value)} />
