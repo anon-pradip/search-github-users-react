@@ -10,6 +10,7 @@ const Search = () => {
     e.preventDefault();
     searchGithubhUser(user);
   }
+  console.log(requests)
   return (
     <>
       <div className='my-4 text-red-700 text-xl font-bold font-mono'>
