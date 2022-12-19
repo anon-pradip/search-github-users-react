@@ -1,3 +1,6 @@
+# The site has been deployed on netlify. Please check out:
+https://search-for-github-users-react.netlify.app/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
